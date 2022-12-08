@@ -1,9 +1,9 @@
-title: devlopr
+title: 
 subtitle: A Portfolio Jekyll Theme Built for Developers
 description: >- # this means to ignore newlines until "baseurl:"
   devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.
 
-url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
+url: "rytt0001.github.io" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # Navigation
@@ -14,10 +14,6 @@ urls:
       url: /about
     - text: Blog
       url: /blog
-    - text: Gallery
-      url: /gallery
-    - text: Shop
-      url : /shop
     - text: Contact
       url : /contact
 
@@ -25,49 +21,49 @@ urls:
 # Edit Author details (For multi authors check _data/authors.yml)
 
 author_logo: profile.png
-author: John Doe
-author_bio: Hi, my name is John Doe. I built this site using devlopr-jekyll :D
-author_email: "mail@sujaykundu.com"
-author_location: India
-author_website_url: "https://sujaykundu.com"
-typewrite-text: devlopr is a jekyll framework built for developers. You can edit this in _config.yml file
+author: Ryan Sandrin
+author_bio: Hi, my name is Ryan Sandrin. I built this site using devlopr-jekyll :D
+author_email: "ryan.sandrin@outlook.fr"
+author_location: France
+author_website_url: ""
+typewrite-text: Student at Isart and developer
 hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences
 author_work_experiences:
-            - company_name: Google
-              company_logo: google.png
-              company_url: https://google.com
-              designation: Software Engineer
-              description: Worked on various Google Products
+            - company_name: Eversim
+              company_logo: eversim.png
+              company_url: https://www.eversim.net/
+              designation: Internal tools developer
+              description: Worked on various internal tools
               visibility: true
-            - company_name: Microsoft
-              company_logo: microsoft.png
-              company_url: https://microsoft.com
-              designation: Azure Developer
-              description: Worked on various Azure Cloud Products
+            - company_name: Space Reindeer
+              company_logo: sr.png
+              company_url: https://spacereindeers.fr/
+              designation: VR Gameplay Developer
+              description: Worked on gameplay features on an upcoming VR title
               visibility: true
 
 # Education
 author_education_details:
-              - college_logo: mit.png
-                college_name: MIT
-                college_url: https://mit.org
-                college_degree: CS Engineer
-                description: Bachelor of Technology
+              - college_logo: Isart.png
+                college_name: Isart Digital
+                college_url: https://www.isart.fr/
+                college_degree: Game Programming
+                description: Master's degree of game programming
                 visibility: true
 
 # Projects
 author_project_details:
-              - project_thumbnail: gamershub.png
-                project_title: Gamers Hub
-                project_description: A Platform built for Gamers and Game Devs
-                project_url: https://gamershub.in
+              - project_thumbnail: solid.png
+                project_title: Solid Engine
+                project_description: A custom Game engine featuring PhysX FMOD and ImGUI
+                project_url: https://drive.google.com/file/d/1CYFIlG6o4ziqGCuOsY303y2h-8pfkg5k/view?usp=share_link
                 visibility: true
-              - project_thumbnail: hack4r.PNG
-                project_title: Hack4r
-                project_description: A Platform built for Hackers and Penetration Testers
-                project_url: https://hack4r.com
+              - project_thumbnail: Helltimber.PNG
+                project_title: HellTimber
+                project_description: An Upcoming Frenzied close combat bullet hell game on PS4
+                project_url: TBD
                 visibility: true
 
 # social links
