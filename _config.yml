@@ -1,186 +1,98 @@
-title: Ryan Sandrin
-subtitle: Generalist Developer
-description: >- # this means to ignore newlines until "baseurl:"
-  devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.
-
-url: "https://rytt0001.github.io" # the base hostname & protocol for your site, e.g. https://example.github.io
-baseurl: "" # the subpath of your site, e.g. /blog
-
-# Navigation
-urls:
-    - text: Home
-      url: /
-    - text: About
-      url: /about
-    - text: Blog
-      url: /blog
-
-
-# Edit Author details (For multi authors check _data/authors.yml)
-
-author_logo: profile.png
-author: Ryan Sandrin
-author_bio: Hi, my name is Ryan Sandrin. I built this site using devlopr-jekyll :D
-author_email: "ryan.sandrin@outlook.fr"
-author_location: France
-author_website_url: ""
-typewrite-text: Student at Isart and developer
-hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
-
-# Experiences
-author_work_experiences:
-            - company_name: Eversim
-              company_logo: eversim.png
-              company_url: https://www.eversim.net/
-              designation: Internal tools developer
-              description: Worked on various internal tools
-              visibility: true
-            - company_name: Space Reindeer
-              company_logo: sr.png
-              company_url: https://spacereindeers.fr/
-              designation: VR Gameplay Developer
-              description: Worked on gameplay features on an upcoming VR title
-              visibility: true
-
-# Education
-author_education_details:
-              - college_logo: Isart.png
-                college_name: Isart Digital
-                college_url: https://www.isart.fr/
-                college_degree: Game Programming
-                description: Master's degree of game programming
-                visibility: true
-
-# Projects
-author_project_details:
-              - project_thumbnail: SOLID.png
-                project_title: Solid Engine
-                project_description: A custom Game engine featuring PhysX FMOD and ImGUI
-                project_url: https://youtu.be/3cTuy6gI4t8
-                visibility: true
-              - project_thumbnail: Helltimber.png
-                project_title: HellTimber
-                project_description: An Upcoming Frenzied close combat bullet hell game on PS4
-                project_url: TBD
-                visibility: true
-
-# social links
-#twitter_username: johndoe
-github_username:  rytt0001
-#facebook_username: johndoe
-linkedin_username: ryan-sandrin
-#behance_username: johndoe
-#instagram_username: johndoe
-#medium_username: johndoe
-#telegram_username: johndoe
-#dribbble_username: johndoe
-#flickr_username: johndoe
-
-#for comments ( we got Disqus and Hyvor Commenting, uncomment the one you want to use )
-
-# disqus_shortname: sujay-kundu
-#hyvor_talk_website_id: 476
-
-# wakatime username (coding activity)
-#wakatime_username: sujaykundu777
-
-# mailchimp embedded form url (newsletter):
-#mailchimp_form_url: 
-
-# contact form - (choose formspress or getform)
-# getform_endpoint: 83b703c3-9e47-4df4-ac55-e24d7eb02abc
-formspree_email: ryan.sandrin@outlook.fr
-
-# releases - widget can be (sidebar, modal or embed)
-olvy_organization: devlopr
-olvy_widget_type: sidebar
-
-# syntax highlighter
+# WhatATheme
 markdown: kramdown
-highlighter: rouge
-permalink: pretty
 
-# Choose what to show ( can be true or false)
-show_author_work_experiences: true
-show_author_education_details: true
-show_author_project_details: true
+# URL of the Site
+url: ''
+# Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
+baseurl: 
 
-# pagination of posts
-paginate: 4
-per_page: 4
-paginate_path: "/blog/page/:num/"
+# Title of the Site
+title: Ryan Sandrin
+# Description of the Site
+description: C++ and c# generalist developer
+# URL of Image of the Site
+site-image: /assets/images/sample_cover.jpg
+# Keywords of the Site
+site-keywords: portfolio, projects, ryan sandrin, SOLID TEAM
+# URL for the Image of custom Favicon
+favicon-url: 
 
-# minify
-# compress_html:
-#   clippings: all
-#   comments: ["<!-- ", " -->"]
-#   endings: all
-#   ignore:
-#     envs: ['development']
+# URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
+heroimage: /assets/images/sample_cover.jpg
 
-# Archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#   layout: archive
-#   permalinks:
-#     category: '/category/:name/'
+# Social Media and Contact
+# If you don't want to use any icon, you can leave them blank.
+email: ryan.sandrin@outlook.fr
+facebook_username:
+twitter_username:
+instagram_username:
+linkedin_username: ryan_sandrin
+github_username:  rytt0001
+youtube_channel_id:
+reddit_username: rytt0001
+behance_username:
+dribbble_username:
+spotify_username:
 
-collections:
-  authors:
-    output: true
+# Google Analytics
+google-analytics:
 
-defaults:
-  -
-    scope:
-      path: "gallery"
-    values:
-      permalink: /:path/:basename:output_ext
-  -
-    scope:
-      path: ""
-      type: authors
-    values:
-      layout: author
-      permalink: /blog/authors/:slug
-  -
-    scope:
-      path: 'assets/**'
-    values:
-      sitemap: false
+# Disqus
+disqus-shortname: rytt0001
+
+# Name of the Author
+author-name: Rytt0001
+# URL for the Image of the Author
+author-image: /assets/images/profile.png
+# 60 Words About the Author
+author-about: C++ and C# developer and sometimes gamers, I like to make jokes to ease tension in the atmosphere
+# URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
+author-url: https://github.com/rytt0001
+
+# SASS
+sass:
+  sass_dir: _sass
+  style: compressed
 
 # Build settings
 plugins:
-  - jekyll-paginate
-  - jekyll-gist
-  - jekyll-seo-tag
-  - jekyll-sitemap
   - jekyll-admin
+  - jekyll-feed
 
-# Jekyll Admin Config
-jekyll_admin:
-  # hidden_links:
-  #   - posts
-  #   - pages
-  #   - staticfiles
-  #   - datafiles
-  #   - configuration
-  homepage: "posts"
+# Permalink
+permalink: "blog/:title"
 
+# Compress
+#compress_html:
+#  clippings: all
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-
-### Switching Deployment Strategy (in DEPLOY_STRATEGY) file change the key accordingly:
-# none - For no default
-# gh-pages - For Github Pages
-# firebase - For Firebase Hosting
-
+# Defaults
+defaults:
+  -
+    scope:
+      type: 'posts'
+    values:
+      layout: post
+      post-image: ""
+      description: ""
+      tags:
+        - ""
+  -
+    scope:
+      type: 'pages'
+    values:
+      layout: page
+  -
+    scope:
+      type: 'projects'
+    values:
+      layout: project
+      
+      
+collections:
+    project:
+        output: true
+# Exclude
 exclude:
   - .sass-cache/
   - .jekyll-cache/
@@ -192,31 +104,3 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - assets/bower_components/isotope-layout/README.md
-  - assets/bower_components/icono/README.md
-  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-svg-core/README.md
-  - assets/bower_components/ghosthunter/README.md
-  - assets/bower_components/nanobar/README.md
-  - assets/bower_components/lightgallery/demo/README.md
-  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/free-brands-svg-icons/README.md
-  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/free-solid-svg-icons/README.md
-  - assets/bower_components/jquery-mousewheel/README.md
-  - assets/bower_components/get-size/README.md
-  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome/README.md
-  - assets/bower_components/jquery-mousewheel/ChangeLog/README.md
-  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-regular/README.md
-  - assets/bower_components/desandro-matches-selector/README.md
-  - assets/bower_components/ev-emitter/README.md
-  - assets/bower_components/font-awesome/README.md
-  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-solid/README.md
-  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free/README.md
-  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-webfonts/README.md
-  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-free-brands/README.md
-  - assets/bower_components/font-awesome/advanced-options/use-with-node-js/fontawesome-common-types/README.md
-  - assets/bower_components/ghosthunter/example/Index.html
-  - assets/bower_components/lightgallery/test/lightgallery.html
-  - assets/bower_components/masonry-layout/README.md
-  - assets/bower_components/imagesloaded/README.md
-
-
-destination: ./build
