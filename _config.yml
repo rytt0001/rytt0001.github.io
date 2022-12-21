@@ -84,9 +84,20 @@ defaults:
       layout: page
   -
     scope:
-      type: 'projects'
+      type: 'project'
     values:
-      layout: project
+      layout: projectPage
+      name: ""
+      category: ""
+      tags:
+      - ""
+      - ""
+      authors:
+      - ""
+      thumbnail: ""
+      image: ""
+      link: ""
+      shortDesc: ""
       
       
 collections:
