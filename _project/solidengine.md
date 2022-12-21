@@ -1,5 +1,5 @@
 ---
-title: P1
+title: SolidEngine
 layout: projectPage
 name: Solid Engine
 category: Game Engine
@@ -25,16 +25,16 @@ solid engine was a game engine made by 4 developers. the goal was to make an Eng
 ## Features
 * Launcher / Project Management
 * Multithreaded Assets loading
-* custom threads
+* Custom threads
 * Compute shaders (texture Generation / modification)
 * Particles
 * Extensive UI
 * C++ Script Compilation and HotReload
 * In editor shader edition
-* spatialized audio
-* packaging into a standalone game
-* shader reflection
-* script reflection / serialization
+* Spatialized audio
+* Packaging into a standalone game
+* Shader reflection
+* Script reflection / serialization
 * And More ...
 
 
@@ -42,3 +42,5 @@ solid engine was a game engine made by 4 developers. the goal was to make an Eng
 ## Showcase
 
 {% include video.html id="3p5YsPb44UI" w=960 h=540%}
+## Repository
+[Download](https://github.com/SolidTeamDev/SolidEngine)
