@@ -29,15 +29,33 @@
             {% endunless %}
             <p class="subtitle is-6 is-uppercase has-text-weight-normal has-text-black-ter">Project made by
                <br/>
-               <a href="{% if site.author-url %}{{site.author-url}}{% else %}{{site.url}}{{site.baseurl}}/#about{% endif %}" target="_blank"><b class="has-text-link"><u>
+               
                {% assign i = 0 %}
+               {% assign author_url = "" %}
                {% for authors in page.authors %} 
+               {% assign found_url = "NONE|" %}
+               {% for authorinfo in site.authors %}
+               {% if authorinfo.name == page.authors[i] %}{% assign found_url = authorinfo.author_url | append: '|'  %}{% endif %}
+               {% endfor %}
+               {% assign author_url = author_url | append: found_url %}
+               {% assign i = i | plus:1 %}
+               {% endfor %}
+               {% assign i = 0 %}
+               {% assign my_array = author_url | split: "|" %}
+               {% for authors in page.authors %} 
+               {% if my_array[i] != "NONE" %}
+               <a href="{{my_array[i]}}" target="_blank"><b class="has-text-link">
+               {% endif %}
+               <u>
                {{page.authors[i]}}. 
+               </u></b>
+               {% if my_array[i] != "NONE" %}
+              	</a>
+              	{% endif %}
                <br/>
                {% assign i = i | plus:1 %}
                {% endfor %}
-               </u></b>
-              </a>
+               
             </p>
             {%- assign tags = page.tags -%}
             {%- unless tags.size == 0 -%}

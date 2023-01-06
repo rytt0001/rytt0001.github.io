@@ -71,6 +71,12 @@ permalink: "blog/:title"
 defaults:
   -
     scope:
+      type: 'authors'
+    values:
+      name: ""
+      author_url : ""
+  -
+    scope:
       type: 'posts'
     values:
       layout: post
@@ -101,9 +107,12 @@ defaults:
       shortDesc: ""
       
       
+      
 collections:
     project:
         output: true
+    authors:
+        output: false
 # Exclude
 exclude:
   - .sass-cache/
