@@ -41,6 +41,14 @@ shortDesc: Solid Engine, A project consisting of creating a game engine that is 
 	.link {
 	text-decoration-line: unset !important;
 	}
+	
+	.content h2{
+		font-size: 2em;
+	}
+	.content ::marker {
+		color: purple;
+	}
+	
 </style>
 ## Overview 
 {: class="align_center darker" }
