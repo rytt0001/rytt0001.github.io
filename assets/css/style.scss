@@ -276,7 +276,8 @@ a.navbar-item.is-active {
             transform: scale(0.975);
         }
     }
-    
+
+
 .skcard {
 	background-color: black;
     opacity: 0.5;
@@ -285,6 +286,8 @@ a.navbar-item.is-active {
 .skimg{
 	max-height: 40%;
 	max-width: 40%;
+	padding-top: 10px;
+	filter: brightness(0.9);
 }
 #project {
     .columns {

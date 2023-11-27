@@ -2,18 +2,27 @@
     <div class="hero-body">
         <div class="container">
             <div class="columns">
-                <div class="column is-one-fifth-desktop is-one-fifth-tablet is-one-fifth-fullhd">
+                
+                <div class="column has-text-centered-desktop has-text-centered-tablet has-text-centered-fullhd has-text-centered-widescreen">
+                	<p class="is-size-3">About Me:</p>
+                	<div class="container columns">
+                	<div class="column is-one-fifth-desktop is-one-fifth-tablet is-one-fifth-fullhd">
                     <figure class="image">
                         <img class="is-rounded" src="{{site.author-image}}" alt="{{site.author-name}}">
                     </figure>
                 </div>
-                <div class="column has-text-left-desktop has-text-left-tablet has-text-left-fullhd has-text-left-widescreen">
-                	<p>About Me:</p>
-                    <p>{{site.author-about}}</p>
+                
+                	<div class="column has-text-centered-desktop has-text-centered-tablet has-text-centered-fullhd has-text-centered-widescreen">
+                	
+                    <p class="is-size-5">{{site.author-about}}</p>
                     <br>
                     
+                   
+                    </div>
+                    </div>
+                    
                     <!-- Skills-->
-                    <p>My Skills:</p>
+                     <p class="is-size-3">My Skills:</p>
                     <br>
                     {% include skills.html %}
                     <!-- Buttons -->

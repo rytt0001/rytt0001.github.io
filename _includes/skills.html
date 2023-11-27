@@ -17,7 +17,7 @@
            {% assign i = 0 %}
           {% for tags in skill.category %}
            {% assign j = i | plus:1 %}
-          <span class="tag is-link">{{ tags }}</span> {% if j < skill.category.size %};{% endif %}
+          <span class="tag is-link sizedsk">{{ tags }}</span> {% if j < skill.category.size %};{% endif %}
           {% assign i = i | plus:1 %}
           {% endfor %}
           </h3>
