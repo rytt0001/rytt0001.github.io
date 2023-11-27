@@ -10,7 +10,9 @@
         <div class="card-content">
           <h1 class="title has-text-white is-size-3">{{ skill.name }}</h1>
           <br>
-          
+          <h3 class="subtitle has-text-white is-size-6">
+          {{ skill.desc }}
+          </h3>
           <h3 class="subtitle has-text-white is-size-7">
            {% assign i = 0 %}
           {% for tags in skill.category %}

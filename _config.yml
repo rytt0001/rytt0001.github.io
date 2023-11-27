@@ -110,6 +110,7 @@ defaults:
       type: 'Skill'
     values:
       name: ""
+      desc: ""
       category: 
       - ""
       - ""
