@@ -1,0 +1,28 @@
+<div class="columns is-centered is-multiline is-mobile">
+  {% for skill in site.Skill %}
+  
+    <div class="column has-text-centered is-paddingless is-one-third-widescreen is-one-third-desktop is-one-fifth-fullhd is-one-third-tablet is-two-fifths-mobile is-three-quarters-touch"
+      id="skill-card">
+      
+      <div class="skcard">
+        <img class="skimg" src="{{skill.thumbnail}}">
+        </img>
+        <div class="card-content">
+          <h1 class="title has-text-white is-size-3">{{ skill.name }}</h1>
+          <br>
+          
+          <h3 class="subtitle has-text-white is-size-7">
+           {% assign i = 0 %}
+          {% for tags in skill.category %}
+           {% assign j = i | plus:1 %}
+          <span class="tag is-link">{{ tags }}</span> {% if j < skill.category.size %};{% endif %}
+          {% assign i = i | plus:1 %}
+          {% endfor %}
+          </h3>
+          
+        </div>
+      </div>
+      </a>
+    </div>
+  {% endfor %}
+</div>

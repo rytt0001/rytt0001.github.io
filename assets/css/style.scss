@@ -263,7 +263,29 @@ a.navbar-item.is-active {
         }
     }
 }
-
+#skill-card {
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+        transform: scale(0.95);
+        transition: all 0.5s ease;
+        margin-bottom: 0.5rem !important;
+        display: inline-table;
+        width: 20em !important;
+        &:hover {
+            transform: scale(0.975);
+        }
+    }
+    
+.skcard {
+	background-color: black;
+    opacity: 0.5;
+    width: 20em !important;
+}
+.skimg{
+	max-height: 40%;
+	max-width: 40%;
+}
 #project {
     .columns {
         .column {
